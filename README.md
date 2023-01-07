@@ -1,2 +1,2 @@
-# auth
-Auth backend system
+# freshfruitcreamery_auth
+Auth service 
