@@ -2,10 +2,10 @@
   "name": "freshfruitcreamery_auth",
   "version": "1.0.0",
   "description": "Auth endpoint for freshfruitcreamery",
-  "main": "index.js",
+  "main": "auth-index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node auth-index.js",
+    "dev": "nodemon auth-index.js",
     "migrate": "npx sequelize-cli db:migrate"
   },
   "repository": {
