@@ -146,6 +146,7 @@ exports.createUser = async (req, res) => {
               });
             })
             .catch((err) => {
+              console.log(err)
               res.json({
                 error: 0,
                 msg: 'Registration successful! Mail could not be sent!',

@@ -41,7 +41,7 @@ app.use('/client', require('./routes/clients.route'));
 app.use('/role', require('./routes/roles.route'));
 app.use('/scope', require('./routes/scopes.route'));
 
-const PORT = process.env.PORT || 4005;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

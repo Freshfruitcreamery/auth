@@ -8,7 +8,7 @@ const schema = Joi.object({
     .required()
     .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }),
   phone: Joi.string().required(),
-  password: Joi.string().required().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')),
+  password: Joi.string().required(),
   role: Joi.string().required(),
   product_code: Joi.string().required(),
   client: Joi.string().required(),
