@@ -31,6 +31,10 @@ app.use(
   })
 );
 
+
+app.get("/", (req, res) => {
+  res.send("Auth API endpoints")
+})
 /**
  * All auth routes
  */
