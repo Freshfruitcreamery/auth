@@ -1,2 +1,3 @@
 # freshfruitcreamery_auth
-Auth service 
+
+Auth service
