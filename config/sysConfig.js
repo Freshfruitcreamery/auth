@@ -1,8 +1,10 @@
 module.exports = {
   APP_NAME: '',
   APP_DESCRIPTION: '',
-  AUTH_SERVICE_URL: 'http://localhost:4005',
-  CORE_SERVICE_URL: 'http://localhost:4007',
+  AUTH_SERVICE_URL: 'https://auth-production-fc37.up.railway.app',
+  CORE_SERVICE_URL: 'https://core-production-692e.up.railway.app',
+  // AUTH_SERVICE_URL: 'http://localhost:4005',
+  // CORE_SERVICE_URL: 'http://localhost:4007',
   scopes: {
     admin: [
       'CREATE_BUYER',

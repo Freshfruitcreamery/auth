@@ -2,6 +2,7 @@ const express = require('express');
 const session = require('express-session');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
+const morgan = require('morgan');
 
 const app = express();
 
@@ -20,6 +21,8 @@ app.use(
   })
 );
 
+app.use(morgan('combined'));
+
 // bodyParser middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -31,10 +34,9 @@ app.use(
   })
 );
 
-
-app.get("/", (req, res) => {
-  res.send("Auth API endpoints")
-})
+app.get('/', (req, res) => {
+  res.send('Auth API endpoints');
+});
 /**
  * All auth routes
  */
