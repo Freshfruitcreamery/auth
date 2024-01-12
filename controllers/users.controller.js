@@ -113,7 +113,7 @@ exports.createUser = async (req, res) => {
           params.logo = Logo;
           params.header_color = 'white';
 
-          const link = `${clientResult.url}/verify/${token}`;
+          const link = `${clientResult.url}/verify/email/${token}`;
 
           params.body = `<p style="font-size:1.7em;"><b>Hi, ${first_name}</b></p>`;
           params.body += `<p style="font-size: 1.4em;">Welcome to ${process.env.APP_NAME},</p>`;
@@ -146,7 +146,7 @@ exports.createUser = async (req, res) => {
               });
             })
             .catch((err) => {
-              console.log(err)
+              console.log(err);
               res.json({
                 error: 0,
                 msg: 'Registration successful! Mail could not be sent!',
